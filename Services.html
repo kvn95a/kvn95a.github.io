@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <!--This is the Home page of the website.-->
+
+    <head>
+        <meta charset = "utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Set metadata of the document-->
+        <meta name = "keywords" content = "kids, food, aid, non-profit" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <title>Donate | Food For The Littles</title>
+        <link href="layout_file.css" rel="stylesheet" /><!--Link to CSS file(s)-->
+        <link href="style_file.css" rel="stylesheet" />
+        <script src="Script.js" defer></script>
+    </head>
+
+    <body>
+        <header><!--Use sectioning, grouping, and text-level elements-->
+            <a href="index.html"><img src="Logo_Banner.png" alt="Food for The littles" /></a><!--Include inline images-->
+        </header>
+        
+        <nav><!--Use sectioning, grouping, and text-level elements-->
+            <ul = class="mainmenu"><!--Include navigation list with hypertext links-->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_file.html">About</a></li>
+                <li><a href="Services.html">Donate</a></li>
+                <li><a href="contact_file.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <article class><!--Use sectioning, grouping, and text-level elements-->
+            <h1>Donate</h1>
+            <p>Each donation include a maximum of 5 reward button Pin that you can personalize.</p>
+        </article>
+
+        <form action="#" method="post"><!--Create and format a form with multiple field sets-->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><!--Create and format a text area-->
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male"><!--Include the following input types: text, date/time, radio buttons, spinners, range sliders, and check boxes-->
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"><!--Include at least one input that is set for a mobile keyboard type (e.g. number, email, url, etc.)-->
+            </fieldset>
+        
+            <fieldset>
+                <legend>Preferences</legend>
+                <label for="color">Favorite Color for your reward button Pin:</label>
+                <input type="color" id="color" name="color">
+                <label for="quantity">Quantity of reward button Pin:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="5" step="1" required>
+                <label for="range">Size of your reward button Pins (from 1 to 3):</label>
+                <input type="range" id="range" name="range" min="1" max="3"><!--Validate data with by having certain fields required-->
+            </fieldset>
+        
+            <fieldset>
+                <legend>Comments</legend>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Subscription</legend><!--Include the following input types: text, date/time, radio buttons, spinners, range sliders, and check boxes-->
+                <label for="subscribe">Subscribe to newsletter:</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+            </fieldset>
+        
+            <fieldset>
+                <legend>Payment Method</legend>
+                <label for="payment">Payment Method:</label>
+                <select id="payment" name="payment" required><!--Create a selection list-->
+                    <option value="">Select Payment Method</option>
+                    <option value="credit">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bitcoin">Bitcoin</option>
+                </select>
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" pattern="[0-9]{16}" required placeholder="Enter 16-digit card number"><!--Validate data with patterns and field lengths-->
+
+                <label for="donation-amount">Donation Amount:</label>
+                <input type="number" id="donation-amount" name="donation-amount" min="0" step="0.01" required>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Submit</legend>
+                <input type="submit" value="Submit"><!--Create a submit and cancel/reset button-->
+                <input type="reset" value="Reset"><!--Create a submit and cancel/reset button-->
+            </fieldset>
+        </form>
+
+        <div class="time-sections">
+            <section id="current-time-section">
+                <h2>Current Date and Time</h2>
+                <div id="dateNow">11/8/2021<br />2:45:12 p.m.</div>
+            </section>
+            <section id="countdown-section">
+                <h2>Countdown to Next Event: </br> October 01, 2024</h2>
+                <div id="countdown">
+                    <div><span id="days">53</span><br />Days</div>
+                    <div><span id="hrs">9</span><br />Hours</div>
+                    <div><span id="mins">14</span><br />Minutes</div>
+                    <div><span id="secs">48</span><br />Seconds</div>
+                 </div>
+            </section>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="left">
+                    <p><a href="index.html">Food For The Littles</a> &copy</p><!--Include character references-->
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about_file.html">About Us</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="contact_file.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>

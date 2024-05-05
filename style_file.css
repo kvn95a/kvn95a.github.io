@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+@media screen and (max-width: 767px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    body > * {
+        margin: 10px 0;
+    }
+
+    article img {
+        display: none; /*Handle overflow*/
+    }
+    
+    .time-sections {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (min-width: 710px) {
+
+    nav {
+        float: none;/*Create a floated layout*/
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    ul.mainmenu {
+        display: flex;
+        flex-flow: row nowrap; /*Implement responsive design to different screen widths using @media and flex/flexbox*/
+        justify-content: Center;
+    }
+
+    ul.mainmenu li {
+        flex: 0 1 120px;
+    }
+}

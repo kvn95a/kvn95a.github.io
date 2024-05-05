@@ -1,0 +1,372 @@
+@charset "utf-8";
+
+html {
+    width: 100%;
+    background-color: #FFDE59;
+}
+
+body {
+    min-width: 650px;
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    background-color: #FFDE59;
+    background-color: rgb(255, 222, 89);
+    margin-bottom: -16px;
+}
+
+header img {
+    display: block;/*Use both block and floating elements*/
+    width: 50%;
+    margin: 0 auto; /* Horizontally center the image */
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Use pseudo classes/elements*/
+a:hover {
+    color: orange;
+}
+
+
+nav, footer {
+    font-family: 'Rubik', Verdana, "sans-serif";
+    background-color: #fff475;
+    background-color: rgb(255, 244, 117);
+    margin-top: 0;
+    font-weight: bold;
+    border-bottom: 4px solid black;
+}
+
+nav a {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    text-align: center;
+    padding: 10px 20px;
+    display: block;
+    color: black;
+}
+/*Format lists, background, and text*/
+/*Use pseudo classes for hypertext links*/
+ul.mainmenu li:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+nav li {
+    list-style: none;
+    line-height: 1.2em;
+}
+
+
+
+article {
+    display: flex;
+    flex-direction: column; /* Implement responsive design to different screen widths using @media and flex/flexbox */
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+    background-color: #fee579;
+}
+
+article h1 {
+    font-family: 'Bebas Neue', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3em;
+    margin: 0.4em;
+    letter-spacing: 0.1em;
+
+}
+
+article p {
+    line-height: 1.5;
+    font-family: 'Bebas Neue', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    margin: 0.4em;
+}
+
+div.paragraphs p {
+    font-size: 1.2em;
+}
+
+article .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 100%;
+    width: 100%;
+}
+
+/*Use contextual/attribute selectors*/
+article .content .paragraphs {
+    flex: 1;
+    max-width: 50%;
+    padding: 0 1em 0 1em;
+    text-align: justify;
+    font-family: 'Reddit Mono', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    margin-left: 20px;
+}
+
+article .content img {
+    margin: 0 20px 20px 30px;
+    max-width: 45%;
+    height: auto;
+}
+
+
+.home_subtitle {
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+div.home_subtitle {
+    margin: 0.5em 0;
+    font-family: 'Bebas Neue', Verdana, Geneva, Tahoma, sans-serif;
+    background: #fee579;
+}
+
+/*------------------------------ABOUT US---------------------*/
+div.banner1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(ChefKid.jpeg);
+    background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.banner1 h1,
+div.contact_banner h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+div.banner1 p,
+div.contact_banner p {
+    width: 50%;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+div.banner2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+div.banner2 p{
+    margin: 1.5em;
+    width: 45%;
+    font-family: 'Reddit Mono', Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    font-size: 1.2em;
+}
+/*---------------------CONTACT STYLES-----------------------*/
+
+div.contact_banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(contact_banner.jpg);
+    background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*-------------------CONTACT INFO BANNER--------------------*/
+.contact_info {
+    display: flex;
+}
+
+.image-section {
+    flex: 1;
+    
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.info-section {
+    flex: 1;
+    padding: 0.6em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info-section h1 {
+    margin-bottom: 0.3em;
+}
+
+.info-section p {
+    margin-left: 1em;
+    margin-bottom: 0.6em;
+    font-size: 1.1em;
+    font-family: 'Reddit Mono', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+
+/*-------------------FORM STYLES---------------------------*/
+fieldset {
+    border: 1px solid #94630e;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding: 10px;
+    font-family: 'Bebas Neue', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.7em;
+    background-color: #fee579;
+    border-radius: 5px; /*Create and format a text area*/
+}
+
+label {
+    display: block;
+    margin-bottom: 0.2em;
+    margin-top: 0.8em;
+    font-family: 'Bebas Neue', Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+input:invalid {
+    border-color: red;/*Use the focus pseudo class to format valid and invalid selected boxes*/
+}
+input:valid {
+    border-color: green;/*Use the focus pseudo class to format valid and invalid selected boxes*/
+}
+
+
+/*----------------------COUNTDOWN STYLES----------------------*/
+
+.time-sections {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fee579;
+    font-family: 'Bebas Neue', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Style each section */
+.time-sections section {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #94630e;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Style the headers */
+.time-sections h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the date and countdown numbers */
+#dateNow, #countdown span {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Style the countdown divs */
+#countdown div {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+
+/*-----------------FOOTER STYLES----------------------------------*/
+footer {
+    
+    color: #333; 
+    width: 100%; 
+    height: 4em;
+    bottom: 0; 
+    left: 0;
+    
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.left a {
+    color: black;
+    text-decoration: none;
+}
+
+.left p {
+    font-size: 1.2em;
+}
+
+.right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.right ul li {
+    display: inline-block; 
+    margin-left: 20px;
+}
+
+.right ul li:first-child {
+    margin-left: 0;
+}
+
+.right ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
